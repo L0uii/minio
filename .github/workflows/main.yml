@@ -30,8 +30,7 @@ jobs:
                   	echo "Installing Flutter SDK"
 
                     echo "Installing XZ - LZMA compression utilities"
-                    yum install xz -y
-
+                    
                   	echo "Downloading release file"
 
                     wget -P /tmp -q --show-progress --progress=bar:force:noscroll https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}-stable.tar.xz
