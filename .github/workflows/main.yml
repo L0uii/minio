@@ -52,16 +52,6 @@ jobs:
                   echo "${FLUTTER_RUNNER_TOOL_CACHE}/.pub-cache/bin" >> $GITHUB_PATH
                   echo "${FLUTTER_RUNNER_TOOL_CACHE}/flutter/bin" >> $GITHUB_PATH
 
-            - name: Create .env file
-              run: echo "APP_ENV=test" > .env
-
-            - name: Create app configuration file
-              run: |
-                   echo "
-                   api:
-                     networkProtocol: 'http'
-                     baseUrl: 'test'
-                   " > assets/config/config_test.yaml
 
             - name: Run code formatting check
               run: make flutter_format_dryrun
