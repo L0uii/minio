@@ -5,10 +5,8 @@ on:
 
 jobs:
     build:
-        runs-on: [ self-hosted ]
-        container:
-            image: udp-registry.fiducial.dom/occi/ghba/fiducial:php
-            options: --user root
+        runs-on: [ ubuntu ]
+
         env:
             FLUTTER_VERSION: 3.3.3
         steps:
