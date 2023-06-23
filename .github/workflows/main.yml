@@ -13,13 +13,6 @@ jobs:
             - name: Check out repository code
               uses: actions/checkout@v3
 
-            - name: Install XDG User Directories
-              run: yum install xdg-user-dirs -y
-
-            - name: Install SQLite
-              run: |
-                  yum install sqlite -y
-                  yum install sqlite-devel -y
 
             - name: Install Flutter
               run: |
